@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'orderAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'order_db_test',                      
+        'USER': 'postgres',
+        'PASSWORD': 'root',
+        'HOST': 'host.docker.internal',
+        'PORT': '5432',
     }
 }
 

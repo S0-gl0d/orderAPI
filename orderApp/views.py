@@ -10,6 +10,12 @@ from rest_framework.status import HTTP_201_CREATED, HTTP_400_BAD_REQUEST
 
 
 class OrderApiView(APIView):
+
+    def get(self, request):
+        return Response({"message": "Use POST"})
+
+
+
     def post(self, request):
         serializer = OrderSerializer(data=request.data)
 
