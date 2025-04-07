@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'orderAPI.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'order_db_test',                      
+        'NAME': 'order_db',                      
         'USER': 'postgres',
         'PASSWORD': 'root',
         'HOST': 'host.docker.internal',
